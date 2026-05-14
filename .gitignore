@@ -1,0 +1,39 @@
+# ============================================================
+# File: .gitignore (place at project root)
+# Tells Git which files NOT to track.
+# NEVER commit .env files or node_modules!
+# ============================================================
+
+# ── Environment variables (contains secrets!) ─────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# ── Go backend ─────────────────────────────────────────────
+backend/uploads/
+*.exe
+*.test
+*.out
+vendor/
+
+# ── Next.js frontend ───────────────────────────────────────
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.DS_Store
+
+# ── OS files ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── IDE files ──────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.iml
+
+# ── Zip files ──────────────────────────────────────────────
+*.zip
